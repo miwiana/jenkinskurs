@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Second stage') {
             steps {
-                echo 'Second stage'
+                sh 'cat README.md'
             }
         }
     }
