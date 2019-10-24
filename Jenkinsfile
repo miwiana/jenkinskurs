@@ -1,1 +1,8 @@
-sh cat README.md
+pipeline {
+  agent any
+  stages {
+    stage ('Print README') {
+      sh 'cat README.md'
+    }
+  }
+}
